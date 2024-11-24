@@ -1,0 +1,88 @@
+.why_choose {
+    padding: 100px 0 100px;
+    color: #fff;
+    position: relative;
+}
+.why_choose__content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.why_choose__name {
+    margin-bottom: 10px;
+}
+.why_choose__title {
+    margin-bottom: 24px;
+}
+.why_choose__text {
+}
+.why_choose_row {
+    display: flex;
+
+    @include mediaTablet($displayWidth0){
+        display: block;
+    }
+}
+.why_choose__options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 40px 15px;
+
+    @include mediaTablet($displayWidth0){
+        justify-content: space-around;
+    }
+
+}
+.why_choose__option {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 40px 30px 15px 30px;
+    margin-bottom: 30px;
+
+    &:hover{
+        background: #fff;
+        color: $dark;
+        transition: all 0.5s ease-in;
+        .why_choose__option-text p {
+            color: $dark; // Изменяйте цвет текста в теге <p> при :hover
+            transition: all 0.5s ease-in;
+        }
+    }
+}
+.why_choose__option-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(250deg, #5e2ced 0%, #9749f8 100%);
+    border-radius: 50%;
+
+    img{
+        width: 60%;
+        z-index: 1;
+        
+    }
+}
+.why_choose__option-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.why_choose__option-text {
+    margin-bottom: 16px;
+}
+.why_choose-img {
+    padding: 0 15px;
+    img {
+        max-width: unset;
+    }
+    @include mediaTablet($displayWidth0){
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}

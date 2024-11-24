@@ -1,0 +1,110 @@
+.testimonial {
+    padding: 60px 0 100px;
+    color: #fff;
+    position: relative;
+}
+.testimonial__content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.testimonial__content__row {
+    display: flex;
+
+
+
+}
+.testimonial__name {
+}
+.testimonial__title {
+}
+.testimonial__text {
+}
+.testimonial-carousel {
+}
+.owl-carousel {
+}
+.testimonial__item {
+    display: flex;
+
+    img{
+        max-width: 70%;
+
+        @include mediaTablet($displayWidth1){
+            max-width: 100%;
+        }
+    }
+
+
+    
+
+
+
+}
+.testimonial__item-content {
+    text-align: center;
+    padding: 50px 50px 43px 50px;
+    
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 30px;
+    transform: translateY(-50%);
+    color: $dark;
+    z-index: 1;
+
+    @include mediaTablet($displayWidth1){
+        transform: translateY(70%);
+        right: auto;
+        top: 45%;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    @include mediaTablet($displayWidth2){
+        top: 38%;
+        padding: 0 10px 10px 10px;
+
+
+    }
+
+    @include mediaTablet($displayWidth3){
+        top: 30%;
+
+    }
+
+
+}
+.testimonial__item-text {
+    margin: 15px 0 16px;
+    font-size: 24px;
+
+    @include mediaTablet($displayWidth2){
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    @include mediaTablet($displayWidth3){
+        font-size: 14px;
+    }
+}
+.testimonial__item-name {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+
+    @include mediaTablet($displayWidth2){
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    @include mediaTablet($displayWidth3){
+        font-size: 14px;
+    }
+}
+.testimonial__item-position {
+    font-size: 14px;
+}

@@ -1,0 +1,142 @@
+.about {    
+    padding: 96px 0 40px;
+    color: #fff;
+    position: relative;
+}
+.about__row {
+    display: flex;
+
+    @include mediaTablet($displayWidth1){
+        display: block;
+    }
+
+}
+.about__content {
+    padding: 0 100px 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    
+
+    @include mediaTablet($displayWidth0){
+        padding: 0 50px 0 15px;
+    }
+
+    @include mediaTablet($displayWidth1){
+        padding-bottom: 40px;
+        max-width: 100%;
+    }
+
+
+}
+.about__name {
+
+}
+.about__title {
+
+}
+.about__text {
+}
+
+.about__options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mediaTablet($displayWidth3){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.about__option {
+    padding-bottom: 20px;
+    margin: 0 20px;
+}
+.about__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    width: 100px;
+    height: 100px;
+
+    img{
+        width: 40%;
+        
+    }
+
+
+}
+
+.icon-1{
+    background-image: url(./../img/icon/01.png);
+    background-repeat: no-repeat;
+}
+.icon-2{
+    background-image: url(./../img/icon/02.png);
+    background-repeat: no-repeat;
+}
+.icon-3{
+    background-image: url(./../img/icon/03.png);
+    background-repeat: no-repeat;
+}
+.icon-4{
+    background-image: url(./../img/icon/04.png);
+    background-repeat: no-repeat;
+}
+
+.about__option-title {
+    padding-bottom: 15px;
+
+    a{
+        color: #fff;
+
+        &:hover{
+        
+                color: blue;
+                transition: color 0.5s ease-in;
+        
+            }
+    }
+   
+}
+.about__option-text {
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.square {
+    animation-play-state: running;
+    &:hover .about__icon {
+
+        position: relative;
+  
+        width: 100px;
+        height: 100px;
+      
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+      
+        animation: rotate 0.25s linear forwards;
+        // animation-delay: 2.1s;
+    }
+
+  }
+  
+
+@keyframes rotate {
+from {
+    transform: rotateY(0deg);
+}
+
+to {
+    transform: rotateY(360deg);
+}
+}
+  

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: $font-main;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+}
+
+.container {
+    // width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    max-width: 1140px;
+
+    @include mediaTablet($displayWidth0){
+        max-width: 960px;
+    }
+
+    @include mediaTablet($displayWidth1){
+        max-width: 700px;
+    }
+
+    @include mediaTablet($displayWidth2){
+        max-width: 500px;
+    }
+
+}
+
+
+.none{
+    display: none !important;
+}
+
+.title{
+    font-size: 60px;
+    font-family: $font-main;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 22px;
+
+    @include mediaTablet($displayWidth1){
+        font-size: 48px;
+    }
+
+}
+.title2{
+    font-size: 48px;
+    font-family: $font-main;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 22px;
+
+    @include mediaTablet($displayWidth1){
+        font-size: 32px;
+    }
+
+}
+
+.title3{
+    font-size: 20px;
+    font-family: $font-main;
+    font-weight: 400;
+
+    @include mediaTablet($displayWidth1){
+        font-size: 18px;
+    }
+
+}
+
+.text{
+    font-size: 20px;
+    font-family: $font-main;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    @include mediaTablet($displayWidth1){
+        font-size: 18px;
+    }
+}
+
+.text2{
+    font-size: 16px;
+    font-family: $font-main;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+
+    @include mediaTablet($displayWidth1){
+        font-size: 14px;
+    }
+}
+
+.a{
+    color: $white;
+}
+
+.none{
+    display: none;
+}

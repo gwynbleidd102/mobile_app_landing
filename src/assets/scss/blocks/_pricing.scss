@@ -1,0 +1,102 @@
+.pricing {
+    padding: 60px 0 100px;
+    color: #fff;
+    position: relative;
+}
+.pricing__content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.pricing__name {
+}
+.pricing__title {
+}
+.pricing__text {
+}
+.pricing__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @include mediaTablet($displayWidth1){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaTablet($displayWidth2){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.pricing_plan {
+    text-align: center;
+    width: 33%;
+    padding: 0 15px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 52px 0 60px 0;
+
+    &:hover{
+        color: $dark;
+        background-color: #fff;
+        transition: background-color 0.5s ease-in;
+
+        .text li {
+            color: $dark; /* Измените цвет текста внутри li при наведении */
+        }
+
+    }
+    &:not(:hover) .button {
+    }
+
+    @include mediaTablet($displayWidth1){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+   
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 48px;
+    margin-bottom: 35px;
+    span{
+        font-size: 16px;
+    }
+
+}
+.text {
+    margin-bottom: 50px;
+    li{
+        margin: 15px 0;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+}
+.button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 50px;
+    background: linear-gradient(50deg, #e877cb 0%, #a197fa 100%);
+    border-radius: 30px;
+    font-weight: 700;
+
+    &:hover{
+        background: linear-gradient(250deg, #e877cb 0%, #a197fa 100%);
+        transform: scale(1.1); /* Увеличьте размер кнопки на 20% */
+        transition: all 0.5s ease-in;
+
+    }
+
+    &:active{
+        position: relative;
+        top: 5px
+    }
+}

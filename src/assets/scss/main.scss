@@ -1,0 +1,25 @@
+//Base
+
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+// // //Blocks
+
+@import './blocks/preloader';
+@import './blocks/flaticon';
+@import './blocks/header_nav';
+@import './blocks/nav-icon';
+@import './blocks/header';
+@import './blocks/about';
+@import './blocks/boost';
+@import './blocks/why_choose_this';
+@import './blocks/how_does';
+@import './blocks/screenshots';
+@import './blocks/testimonial';
+@import './blocks/pricing';
+@import './blocks/team';
+@import './blocks/cta';
+@import './blocks/contact';
+@import './blocks/footer';
