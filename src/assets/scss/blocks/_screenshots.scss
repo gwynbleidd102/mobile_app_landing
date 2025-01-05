@@ -1,11 +1,11 @@
 .screenshots {
-    padding: 60px 0 100px;
-    color: #fff;
-    position: relative;
+  padding: 60px 0 100px;
+  color: #fff;
+  position: relative;
 }
 .screenshots__content {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .screenshots__name {
 }
@@ -14,14 +14,10 @@
 .screenshots__text {
 }
 
-
 .screenshot__item {
-    margin-top: 27px;
-    width: 255px;
-    // height: 550px;
-    border-radius: 5px;
-    object-fit: cover;
-
-  
-
+  margin-top: 27px;
+  width: 255px;
+  height: 550px;
+  border-radius: 5px;
+  object-fit: cover;
 }

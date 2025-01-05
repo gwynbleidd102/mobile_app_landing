@@ -153,7 +153,7 @@
   display: inline-block;
   padding: 15px 30px; /* Размеры кнопки */
   border-radius: 30px;
-  background: linear-gradient(50deg, #5e2ced 0%, #9749f8 100%);
+  background: linear-gradient(50deg, #309b30 0%, #1ea045 100%);
   color: #fff;
   text-decoration: none; /* Убираем подчеркивание */
   font-size: 16px;
@@ -165,7 +165,7 @@
 }
 
 .contact_button:hover {
-  background: linear-gradient(250deg, #5e2ced 0%, #9749f8 100%);
+  // background: linear-gradient(250deg, #5e2ced 0%, #9749f8 100%);
   transform: scale(1.05); /* Лёгкое увеличение при наведении */
 }
 

@@ -40,7 +40,7 @@
   margin-bottom: 30px;
 
   &:hover {
-    background: #fff;
+    background: #e2e2e2;
     color: $dark;
     transition: all 0.5s ease-in;
     .why_choose__option-text p {
@@ -57,7 +57,7 @@
   margin-bottom: 35px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(250deg, #5e2ced 0%, #9749f8 100%);
+  background: linear-gradient(250deg, #0c8b00 0%, #039e24 100%);
   border-radius: 50%;
 
   img {
