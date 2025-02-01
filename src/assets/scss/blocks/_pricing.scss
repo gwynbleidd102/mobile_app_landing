@@ -96,3 +96,16 @@
     top: 5px;
   }
 }
+
+// oferta
+.offer-contract {
+  text-align: center; /* Центрирование текста по горизонтали */
+  padding: 20px 0; /* Отступы сверху и снизу для визуального отделения блока */
+}
+.offer-contract a {
+  color: #c7c7c7; /* Серый цвет ссылки */
+  text-decoration: none;
+}
+.offer-contract a:hover {
+  text-decoration: underline;
+}
